@@ -1,0 +1,71 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-repeat: no-repeat;
+    background-color: black;
+    background-image: url("map.png");
+    background-size: cover;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: black;
+    color: #fff;
+    border: none;    
+    outline: none;
+    border-radius: 5px;
+}
+.text{
+   color: white;
+   margin-left: 30%;
+}
+
+#image1,
+#image2,
+#image3{
+    justify-content: center;
+    position: absolute;
+}
+
+.question1,
+.answer1,
+.answer2,
+.answer3,
+.question2,
+.question3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin top: 200px;
+    height: relative;
+    
+    background-color: rgba(90, 62, 30, 0.7);
+}
+.answer1{
+    display: :flex;
+    flex-wrap: wrap;
+}
+
+#video1,
+#video2,
+#video3{
+    opacity: 0;
+}
+
+#first1,
+#first2,
+#first3,
+#first4,
+#second1,
+#second2,
+#second3,
+#second4,
+#third1,
+#third2,
+#third3,
+#third4{
+    cursor: pointer;
+}

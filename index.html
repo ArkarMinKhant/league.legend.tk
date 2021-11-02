@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>League of Legends</title>
+      <link rel="stylesheet" type="text/css" href="style3.css">
+      <link rel="stylesheet" type="text/css" href="style2.css">
+      <link rel="stylesheet" type="text/css" href="style5.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="css/all.css">
+   </head>
+   <body>
+      
+      <img id="riot2" width= "200" height="100" src ="riot2.png">
+      <a href="https://www.riotgames.com/en" target="_blank" rel="noreferrer noopener"><img id="riot"width= "200" height="100" src ="riot.png"></a>
+      <img id="lol" width= "177" height="100" src ="league.png">
+      <img id="blue"width= "100" height="100" src ="blue.png">
+      <a href="https://lolesports.com" target="_blank" rel="noreferrer noopener"><img id="black20"width= "110" height="110" src ="black20.png"></a>
+
+      
+
+      <input type="checkbox" id="check">
+      <label for="check">
+         <div class="button">
+            <span class="fas fa-bars"></span>
+         </div>
+      </label>
+
+      <nav class="sidebar">
+         <div class="text">
+            Menu
+         </div>
+         <ul>
+            <li id="home" class="active"><a href="#">Home</a></li>
+            <li id="official"><a href="https://lol.garena.com/" target="_blank" rel="noreferrer noopener">Official Page</a></li>
+            <li id="news"><a href="https://lol.garena.com/news" target="_blank" rel="noreferrer noopener">News</a></li>
+            <li id="info"><a href="https://lol.garena.com/champions" target="_blank" rel="noreferrer noopener">Game Info</a></li>
+            <li id="universe"><a href="https://universe.leagueoflegends.com/en_SG/" target="_blank" rel="noreferrer noopener">Universe</a></li>
+            <li id="support"><a href="https://support.lol.garena.com/en_SG" target="_blank" rel="noreferrer noopener">Support</a></li>
+            <li id="top"><a href="https://shop.garena.sg/app" target="_blank" rel="noreferrer noopener">Top Up</a></li>
+         </ul>
+      </nav>
+      <div class= "container">
+         <div class= "header">
+            <img width="100" height="100" id="avatar" src= "avatar.png">
+            <h1>log in</h1>
+         </div>
+         <div class="main">
+            <form>
+               <input id=input type= text placeholder ="Username"  name=""/>
+               <div class="select-box">
+                  <div class="options-container">
+                     <div class="option">
+                        <input type="radio"class="rank"id="iron"name="rank"/>
+                        <label for="iron"><img height="20" src="iron.png">Iron</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="bronze"name="rank"/>
+                        <label for="bronze"><img height="20" src="bronze.png">Bronze</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="silver"name="rank"/>
+                        <label for="silver"><img height="20" src="silver.png">Silver</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="gold"name="rank"/>
+                        <label for="gold"><img height="20" src="gold.png">Gold</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="platinum"name="rank"/>
+                        <label for="platinum"><img height="20" src="platinum.png">Platinum</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="diamond"name="rank"/>
+                        <label for="diamond"><img height="20" src="diamond.png">Diamond</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="master"name="rank"/>
+                        <label for="master"><img height="20" src="master.png">Master</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="grandmaster"name="rank"/>
+                        <label for="grandmaster"><img height="20" src="grandmaster.png">Grandmaster</label>
+                     </div>
+                     <div class="option">
+                        <input type="radio"class="rank"id="challenger"name="rank"/>
+                        <label for="challenger"><img height="20" src="challenger.png">Challenger</label>
+                     </div>
+                  </div>
+                  <div class="selected">
+                     Select Your Rank
+                  </div>
+               </div>
+         </form>
+         <h2 id="declare"> Pick Your Champion To Start</h2>
+         <div class=champion>
+         <div class="images1">
+            <input type="radio" id="teemo" name="champ">
+            <label for="teemo"><a style="color:black" id="teemo1"href="kmsm.html"target="_blank" rel="noreferrer noopener"><img id="teemo" width="50px" height="50px"src="teemo.jpg"></a></label>
+            <input type="radio" id="talon" name="champ">
+            <label for="talon"><a style="color:black" id="talon1" href="tz.html"target="_blank" rel="noreferrer noopener"><img id="talon" width="50px" height="50px"src="talon.png"></a></label>
+            <input type="radio" id="thresh" name="champ">
+            <label for="thresh"><a style="color:black" id="thresh1" href="zja.html"target="_blank" rel="noreferrer noopener"><img id="thresh" width="50px" height="50px"src="thresh.jpg"></a></label>
+         </div>
+         <div class="images2">
+            <input type="radio" id="vladimir" name="champ">
+            <label for="vladimir"><a style="color:black" id="vladimir1" href="kk.html"target="_blank" rel="noreferrer noopener"><img id="vladimir" width="50px" height="50px"src="vladimir.jpg"></a></label>
+            <input type="radio" id="ezreal" name="champ">
+            <label for="ezreal"><a style="color:black" id="ezreal1"href="sktn.html"target="_blank" rel="noreferrer noopener"><img id="ezreal" width="50px" height="50px"src="ezreal.png"></a></label>
+            <input type="radio" id="kayn" name="champ">
+            <label for="kayn"><a style="color:black" id="kayn1"href="lkty.html"target="_blank" rel="noreferrer noopener"><img id="kayn" width="50px" height="50px"src="kayn.jpg"></a></label>
+         </div>
+         </div>
+      </div>
+      <div>
+         <input class="btn" type="button" name="" value="Enter">
+      </div>
+         
+      <script>
+         $('.button').click(function(){
+           $(this).toggleClass("click");
+        });
+      </script>
+      <script src="main.js"></script>
+   </body>
+</html>

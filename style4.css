@@ -1,0 +1,89 @@
+#check{
+  display: none;
+}
+
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  right: -250px;
+  background: white;
+  transition: left 0.4s ease;
+}
+
+#check:checked ~ .sidebar {
+  right: 0px;
+}
+
+.text{
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  background: grey;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+nav ul{
+  background: yellow ;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 40px;
+  border-top: 1px solid skyblue;
+}
+
+nav ul li:last-child{
+  border-bottom: 1px solid skyblue;
+}
+
+nav ul li a{
+  position: relative;
+  color: red;
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 40px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  border-right: 5px solid transparent;
+}
+
+nav ul li a:hover{
+  background: grey;
+}
+
+nav ul li.active a{
+  color: skyblue;
+  border-right-color: skyblue;
+}
+
+.button{
+  position:absolute;
+  top: 15px;
+  right: 30px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.button.click{
+  right: 270px;
+}
+
+.fas{
+  color: black;
+  font-size: 28px;
+  line-height: 45px;
+  margin-top: 7px;
+}
+
+.button.click .fas:before{
+  content: "\f00d";
+}

@@ -1,0 +1,169 @@
+
+
+#check{
+  display: none;
+}
+
+.sidebar{
+  position: fixed;
+  width: 250px;
+  height: 575px;
+  right: -250px;
+  transition: left 0.4s ease;
+}
+
+#check:checked ~ .sidebar {
+  right: 0px;
+  position: absolute;
+}
+
+.text{
+  color: whitesmoke;
+  line-height: 65px;
+  padding-left: 40px;
+  background: #13181B;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#lol{
+  position: absolute;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+#riot{
+  position: absolute;
+  left: 0px;
+}
+
+#riot:hover{
+  opacity: 0;
+  cursor: pointer;
+}
+
+#black20{
+  position: absolute;
+  right: 0px
+}
+#black20:hover{
+  opacity: 0;
+  cursor: pointer;
+}
+
+#blue{
+  position: absolute;
+  right: 7px;
+}
+
+nav ul{
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 40px;
+  /*border-top: 1px solid skyblue;
+  border-bottom: 1px solid skyblue;*/
+}
+
+nav ul li:last-child{
+  /*border-top: 1px solid skyblue;
+  border-bottom: 1px solid skyblue;*/
+}
+
+nav ul li a{
+  position: relative;
+  color: #EDB852;
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 40px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+}
+
+nav ul li a:hover{
+  background: #404138;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#home{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #404138;
+  border-right: 7px solid transparent;
+  color: skyblue;
+  border-right-color: skyblue;
+  margin-top: 2px;
+}
+#official{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2A2A17;
+  margin-top: 2px;
+}
+#news{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2A2A17;
+  margin-top: 2px;
+}
+#info{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2A2A17;
+  margin-top: 2px;
+}
+#universe{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2A2A17;
+  margin-top: 2px;
+}
+#support{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2A2A17;
+  margin-top: 2px;
+}
+#top{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #2A2A17;
+  margin-top: 2px;
+}
+
+
+.button{
+  position:absolute;
+  top: 110px;
+  right: 30px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #EDB852;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.button.click{
+  right: 270px;
+}
+
+.fas{
+  color: black;
+  font-size: 28px;
+  line-height: 45px;
+  margin-top: 7px;
+}
+
+.button.click .fas:before{
+  content: "\f00d";
+}
+

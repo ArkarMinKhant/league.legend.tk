@@ -1,0 +1,242 @@
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-image: url("map.png");
+  background-size: cover;
+  font-family: "Roboto", san-serif;
+}
+
+*{
+  margin:  0;
+  padding: 0;
+  box-sizing:  border-box;
+}
+
+h1{
+  text-align: center;
+  color: #EDB852;
+}
+
+
+#avatar{
+  margin-top: -50%;
+}
+ 
+
+#input{
+  width:  90%;
+  margin: 9px;
+  height: 40px;
+  border-radius: 8px;
+  text-align: left;
+  background: #404138;
+  color: #EDB852;
+  padding-left: 10px;
+}
+
+.container{
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 32px;
+  background-color: rgba( 90, 62, 30, 0.8);
+  border-radius: 30px;
+  height: relative;
+  text-align: center;
+}
+
+
+.select-box {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin-left: 9px;
+}
+
+.option{
+  text-align: left;
+}
+.level{
+
+}
+
+.select-box .options-container {
+  background:#404138;
+  color: #EDB852;
+  max-height:  0;
+  opacity: 0;
+  width: 26%;
+  transition:  all 0.4s;
+  border-radius: 18px;
+  overflow: hidden;
+  line-height: 25px;
+  order: 1;
+
+  position: absolute;
+  margin-top: 60px;
+
+  
+}
+
+
+.selected{
+  background: #404138;
+  color: #EDB852;
+  border-radius: 18px;
+  margin-bottom: 8px;
+  position: relative;
+  order: 0;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.selected::after{
+  content: "";
+  background-image: url("arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right:  10px;
+  top: 15px;
+  transition:  all 0.4s;
+}
+
+.select-box .options-container.active{
+  max-height:  150px;
+  opacity: 1;
+  overflow-y:  scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+  transfrom: rotateX(180deg);
+}
+.select-box .options-container::-webkit-scrollbar{
+  width: 8px;
+  background: #525861;
+  border-radius: 8px 8px 8px 8px;
+}
+.select-box .options-container::-webkit-scrollbar-thumb{
+  background: #0d141f;
+  border-radius: 8px 8px 8px 8px;
+}
+.select-box .option,
+.selected{
+  padding:  12px 24px;
+  cursor: pointer;
+}
+
+.select-box label {
+  cursor:  pointer;
+}
+
+.select-box .option:hover {
+  background: grey;
+}
+
+.select-box .option .rank {
+  display: none;
+}
+
+.images1{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.images2{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#kayn{
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#vladimir{
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#talon{
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#teemo{
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#ezreal{
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#thresh{
+  border: 2px solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+h2{
+  text-align: center;
+  color: #EDB852;
+  margin-top: 10px;
+}
+.btn{
+  margin-top: 15px ;
+  background-color: #EDB852;
+  height: 35px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+.bt{
+  position: absolute;
+  opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+
+#teemo1:hover {
+  background-color: orange;
+  border-radius: 50%;
+}
+#talon1:hover {
+  background-color: mediumpurple;
+  border-radius: 50%;
+} 
+
+#thresh1:hover {
+  background-color: forestgreen;
+  border-radius: 50%;
+}
+#vladimir1:hover {
+  background-color: firebrick;
+  border-radius: 50%;
+}
+#ezreal1:hover {
+  background-color: royalblue;
+  border-radius: 50%;
+}
+#kayn1:hover {
+  background-color: dimgrey;
+  border-radius: 50%;
+}          
